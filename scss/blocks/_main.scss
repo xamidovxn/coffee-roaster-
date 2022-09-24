@@ -1,0 +1,71 @@
+@import "../buttons";
+
+main {
+   .main__div {
+      margin-top: 43px;
+      padding: 90px 85px;
+      background-color: $main-color;
+   }
+
+   .main__title {
+      font-family: 'Fraunces';
+      font-size: 72px;
+      width: 493px;
+      color: $btn__text-color;
+   }
+
+   .main__p {
+      font-family: 'Fraunces';
+      font-size: 16px;
+      width: 445px;
+      color: $btn__text-color;
+      margin-top: 32px;
+   }
+
+   .main__btn {
+      width: $btn-width;
+      height: $btn-height;
+      border-radius: $btn-radius;
+      background-color: $btn__color;
+      border: none;
+      color: $btn__text-color;
+      margin-top: 56px;
+      font-family: 'Fraunces';
+   }
+
+   .main__btn:hover {
+      background-color: $btn-hover;
+   }
+
+   .main__btn:active {
+      background-color: $btn-active;
+   }
+}
+
+// ======================= RESPONSIVE ================== \\
+
+@media #{$media-mobile} {
+
+   main .main__div {
+   }
+   
+   main .main__title {
+      padding: 0 0 0 10px;
+      margin: 0 auto;
+      width: 279px;
+      font-size: 40px;
+      font-weight: 900;
+   }
+
+   main .main__p {
+      width: 279px;
+      margin: 30px auto;
+      font-size: 15px;
+      text-align: center;
+      font-family: 'Barlow';
+   }
+
+   main .main__btn {
+      margin: 30px 0 0 80px;
+   }
+}

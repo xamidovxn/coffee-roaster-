@@ -1,0 +1,55 @@
+.card__section {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background-image: url("../../images/our collection.png");
+   margin-top: 156px;
+   background-repeat: no-repeat;
+   background-position: center;
+
+
+
+   .card {
+      position: relative;
+      padding-top: 185px;
+      height: 360px;
+      width: 300px;
+      text-align: center;
+
+      .card__title {
+         font-family: 'Fraunces';
+         font-size: 24px;
+         background-color: #fff;
+      }
+
+      .card__p {
+         font-family: 'Barlow';
+         width: 255px;
+         margin: 24px 0 0 20px;
+      }
+   }
+}
+
+// ===================== RESPONSIVE ===================== //
+
+@media #{$media-desktop} {}
+
+@media #{$media-tablet-lg} {}
+
+@media #{$media-tablet} {}
+
+@media #{$media-mobile} {
+   .card__section {
+      background-image: url(no-repeat);
+      background-size: 390px;
+      display: block;
+
+      .card {
+         margin: 0 auto;
+      }
+   }
+}
+
+@media #{$media-mobile-sm} {}
+
+@media #{$media-mobile-xs} {}

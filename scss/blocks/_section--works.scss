@@ -1,0 +1,132 @@
+@import "../variables";
+@import "../buttons";
+
+.works {
+   margin-top: 200px;
+
+   &__div {
+      display: flex;
+      justify-content: space-between;
+      background-color: #fff;
+
+   }
+
+   &__title {
+      position: relative;
+      left: 130px;
+      color: #83888F;
+   }
+
+   &__card {
+      margin-top: 80px;
+   }
+
+   &__card--num {
+      height: 72px;
+      width: 90px;
+      font-size: 72px;
+      color: $num__color;
+   }
+
+   .works__card--title-f {
+      width: 200px;
+      font-size: 32px;
+      margin-top: 38px;
+      font-family: 'Fraunces';
+   }
+
+   .works__card--title-s {
+      width: 200px;
+      font-size: 32px;
+      margin-top: 38px;
+      font-family: 'Fraunces';
+   }
+
+   .works__card--title-th {
+      width: 200px;
+      font-size: 32px;
+      margin-top: 38px;
+      font-family: 'Fraunces';
+   }
+
+   &__card--p {
+      margin-top: 42px;
+      height: 130px;
+      width: 285px;
+      color: $header__ul-color;
+      font-family: 'Barlow';
+   }
+
+   &__btn {
+      position: relative;
+      left: 215px;
+      width: 217px;
+      height: $btn-height;
+      color: $btn__text-color;
+      border: none;
+      margin-top: 38px;
+      font-family: 'Fraunces';
+      border-radius: $btn-radius;
+      background-color: $btn__color;
+
+   }
+
+   &__btn:hover {
+      background-color: $btn-hover;
+   }
+
+   &__btn:active {
+      background-color: $btn-active;
+   }
+}
+
+// ===================== RESPONSIVE ================= //
+
+@media #{$media-mobile} {
+
+   .works {
+      margin-top: 950px;
+   }
+
+   .works .works__div .works__title {
+      position: relative;
+      left: 220px;
+   }
+
+   .works .works__div {
+      display: block;
+   }
+
+   .works .works__div .works__card {
+      margin-left: 140px;
+   }
+
+   .works .works__div .works__card .works__card--num {
+      margin-left: 120px;
+   }
+   
+   .works .works__div .works__card .works__card--title-f {
+      width: 500px;
+      margin-left: 35px;
+   }
+
+   .works .works__div .works__card .works__card--title-s {
+      width: 500px;
+      margin-left:-10px;
+   }
+
+   .works .works__div .works__card .works__card--title-th {
+      width: 500px;
+      margin-left: 15px;
+   }
+
+   .works .works__div .works__card .works__card--p {
+      width: 327px;
+      text-align: center;
+   }
+
+   .works .works__btn {
+      margin: 0 0 0 -20px;
+   }
+   
+}

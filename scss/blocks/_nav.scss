@@ -1,0 +1,129 @@
+html {
+   scroll-behavior: smooth;
+}
+
+nav {
+   display: flex;
+   font-family: 'Barlow';
+   justify-content: space-between;
+
+   .nav__logo:active {
+      opacity: 0.5;
+   }
+
+   .nav__ul {
+      display: flex;
+      justify-content: space-be;
+      color: $header__ul-color;
+   }
+
+   a {
+      width: 150px;
+      display: flex;
+      justify-content: space-between;
+      color: $header__ul-color;
+   }
+
+   a:hover {
+      color: #83888f4f;
+   }
+
+   a:active {
+      color: $header__ul-color;
+   }
+
+   .menu {
+      display: none;
+   }
+}
+
+// ================ RESPONSIVE ==================//
+
+@media #{$media-tablet} {
+   html {
+      scroll-behavior: smooth;
+   }
+
+   nav {
+      display: flex;
+      font-family: 'Barlow';
+      justify-content: space-between;
+      align-items: center;
+
+
+      .nav__logo:active {
+         opacity: 0.5;
+      }
+
+      ul {
+         display: flex;
+         justify-content: space-between;
+         color: $header__ul-color;
+      }
+
+      a {
+         width: 140px;
+         display: flex;
+         justify-content: space-evenly;
+         color: $header__ul-color;
+      }
+
+      a:hover {
+         color: #83888f4f;
+      }
+
+      a:active {
+         color: $header__ul-color;
+      }
+
+      .menu {
+         display: none;
+      }
+   }
+
+}
+
+@media #{$media-mobile} {
+   html {
+      scroll-behavior: smooth;
+   }
+
+   nav {
+      display: flex;
+      font-family: 'Barlow';
+      justify-content: space-between;
+
+      .nav__logo:active {
+         opacity: 0.5;
+      }
+
+      ul {
+         display: flex;
+         justify-content: space-around;
+         color: $header__ul-color;
+      }
+
+      .nav__ul {
+         display: none;
+      }
+
+      a {
+         width: 150px;     
+         display: flex;
+         justify-content: space-between;
+         color: $header__ul-color;
+      }
+
+      a:hover {
+         color: #83888f4f;
+      }
+
+      a:active {
+         color: $header__ul-color;
+      }
+
+      .menu {
+         display: block;
+      }
+   }
+}
